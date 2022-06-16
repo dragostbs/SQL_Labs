@@ -3,7 +3,7 @@ create database library;
 show databases;
 
 create table authors (authornumber int(11),
-		     authorname varchar(50),
+	     authorname varchar(50),
              city varchar(50),
              primary key (authornumber));
 
@@ -69,7 +69,7 @@ from authors
 where city='porto' and authorname like 'a%' and age>=18;
 
 select min(salary) as min_salary,
-	   max(salary) as max_salary,
+       max(salary) as max_salary,
        avg(salary)  as avg_salary
        from authors
 
